@@ -1,6 +1,7 @@
 # Python virtual environment
 Lib/
-/Scripts/  # Only ignore root Scripts folder
+Scripts/
+share/
 pyvenv.cfg
 __pycache__/
 *.py[cod]
@@ -29,4 +30,4 @@ build/
 *.egg-info/
 
 # Large model files
-python_Scripts/yolov3.weights
+python_Scripts/*.weights

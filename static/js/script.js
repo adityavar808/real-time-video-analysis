@@ -10,13 +10,11 @@ window.addEventListener('scroll', () => {
 
 // Theme toggle
 const themeToggle = document.getElementById('theme-toggle');
-let isDarkTheme = true;
 
 themeToggle.addEventListener('click', () => {
-  document.body.style.backgroundColor = isDarkTheme ? '#fff' : '#111';
-  document.body.style.color = isDarkTheme ? '#000' : '#fff';
-  themeToggle.textContent = isDarkTheme ? 'Light Mode' : 'Dark Mode';
-  isDarkTheme = !isDarkTheme;
+  document.body.classList.toggle('light-theme');
+  const isLight = document.body.classList.contains('light-theme');
+  themeToggle.textContent = isLight ? 'Dark Mode' : 'Light Mode';
 });
 
 // Smooth scrolling to #second_main
