@@ -3,11 +3,11 @@ fer
 opencv-python-headless<5
 numpy
 tensorflow
-opencv-contrib-python<5
+opencv-contrib-python-headless<5
 ffmpeg
 moviepy
+readonly
 keras
-Gunicorn
 fastapi
 uvicorn
 python-multipart
